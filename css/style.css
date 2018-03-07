@@ -1,0 +1,54 @@
+body
+{
+	margin-top: 60px;
+	background-color: #c3c3c3;
+	
+
+}
+
+.mybox
+{
+	text-align: center;
+}
+
+.mybox span
+{
+	font-size: 60px;
+}
+
+.mypad
+{
+	margin-top: 60px;
+	text-align: center;
+}
+.jumbotron
+{
+	text-align: center;
+}
+.system
+{
+	border:1px solid green;
+	width=50px;
+	text-align: center;
+
+}
+
+h3
+{
+	border:10px inset green;
+	font-family: arial;
+	font-size:30px;
+	text-align: center;
+}
+
+p
+{
+	font-family: monospace;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.fbox
+{
+	text-align: center;
+}
