@@ -36,8 +36,8 @@
 
     <div class="container">
 
-      <a class="navbar-brand" href="#"><img src="Rajshahi-University-logo.jpg" width="35px" height="35px"/></a>
-   	  <a class="navbar-brand" href="#">Online Address Book</a>
+      <a class="navbar-brand" href="home.php"><img src="Rajshahi-University-logo.jpg" width="35px" height="35px"/></a>
+   	  <a class="navbar-brand" href="home.php">Online Address Book</a>
 
       <ul class="nav navbar-nav navbar-right">
 
@@ -81,7 +81,7 @@
                     </div>
                      </div>
                 </div>
-<h1> Search Page </h1>
+<h1 align="center"> Search Page </h1>
 
                  <div class="row">
                    <div class="col-sm-12">

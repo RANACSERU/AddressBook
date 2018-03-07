@@ -35,8 +35,8 @@ include "connection.php";
 
     <div class="container">
 
-      <a class="navbar-brand" href="#"><img src="Rajshahi-University-logo.jpg" width="35px" height="35px"/></a>
-   	  <a class="navbar-brand" href="#">Online Address Book</a>
+      <a class="navbar-brand" href="home.php"><img src="Rajshahi-University-logo.jpg" width="35px" height="35px"/></a>
+   	  <a class="navbar-brand" href="home.php">Online Address Book</a>
 
       <ul class="nav navbar-nav navbar-right">
 
