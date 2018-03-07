@@ -83,15 +83,15 @@ $check=mysqli_fetch_assoc($m);
 
     <div class="container">
 
-      <a class="navbar-brand" href="#"><img src="Rajshahi-University-logo.jpg" width="35px" height="35px"/></a>
-   	  <a class="navbar-brand" href="#">Online Address Book</a>
+      <a class="navbar-brand" href="home.php"><img src="Rajshahi-University-logo.jpg" width="35px" height="35px"/></a>
+   	  <a class="navbar-brand" href="index.php">Online Address Book</a>
 
       <ul class="nav navbar-nav navbar-right">
 
 
     <li> <a href="home.php">Back</a> </li>
     <li> <a href="Logout.php">Logout</a></li>
-    <li> <a href="#">About Us</a></li>
+    <!-- <li> <a href="#">About Us</a></li> -->
 
     </ul>
     </div>

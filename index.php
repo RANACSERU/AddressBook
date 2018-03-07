@@ -31,7 +31,7 @@
     <div class="container">
 
       <a class="navbar-brand" href="#"><img src="Rajshahi-University-logo.jpg" width="35px" height="35px"/></a>
-   	  <a class="navbar-brand" href="#">Online Address Book</a>
+   	  <a class="navbar-brand" href="index.php">Online Address Book</a>
 
       <ul class="nav navbar-nav navbar-right">
 
@@ -93,7 +93,7 @@
            			<div class="col-md-6">
 
            				<ul class="bottom_ul">
-           					<li> <a href="#">FACEBOOK</a></li>
+           					<li> <a href="https://www.facebook.com/Rana.CSE.RU.37">FACEBOOK</a></li>
            					<li> <a href="#">TWITER</a></li>
            					<!-- <li> <a href="#">YOUTUBE</a><li> -->
            					<!-- <li> <a href="#">BLOG</a></li> -->
