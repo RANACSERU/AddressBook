@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `address` (
   `id` int(100) NOT NULL,
   `userId` int(100) NOT NULL,
-  `name` varchar(100) DEFAULT NULL,
+  `name` varchar(100) NOT NULL,
   `email` varchar(100) DEFAULT NULL,
   `Address` varchar(100) DEFAULT NULL,
   `phone` varchar(100) DEFAULT NULL,
@@ -80,7 +80,7 @@ INSERT INTO `register` (`id`, `user_name`, `email`, `password`) VALUES
 -- Indexes for table `address`
 --
 ALTER TABLE `address`
-  ADD PRIMARY KEY (`id`,`userId`),
+  ADD PRIMARY KEY (`id`,`userId`, `name`),
   ADD KEY `userId` (`userId`);
 
 --
@@ -98,12 +98,12 @@ ALTER TABLE `register`
 -- AUTO_INCREMENT for table `address`
 --
 ALTER TABLE `address`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 --
 -- AUTO_INCREMENT for table `register`
 --
 ALTER TABLE `register`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 --
 -- Constraints for dumped tables
 --

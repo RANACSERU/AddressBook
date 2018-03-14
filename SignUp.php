@@ -109,7 +109,7 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
+									<input type="text" class="form-control" name="username" required="" id="username"  placeholder="Enter your Username"/>
 								</div>
 							</div>
 						</div>
@@ -119,17 +119,28 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+									<input type="text" class="form-control" name="email" required="" id="email"  placeholder="Enter your Email"/>
 								</div>
 							</div>
 						</div>
+
+						<div class="form-group">
+							<label for="phon" class="cols-sm-2 control-label">Phone Number</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+									<input type="number" class="form-control" required="" name="phone" id="phon"  placeholder="Enter phone number"/>
+								</div>
+							</div>
+						</div>
+
 
 						<div class="form-group">
 							<label for="password" class="cols-sm-2 control-label">Password</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+									<input type="password" class="form-control" name="password" id="password" required=""  placeholder="Enter your Password"/>
 								</div>
 							</div>
 						</div>
@@ -139,7 +150,7 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
+									<input type="password" class="form-control" name="confirm" required="" id="confirm"  placeholder="Confirm your Password"/>
 								</div>
 							</div>
 						</div>

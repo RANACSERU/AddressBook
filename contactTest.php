@@ -7,11 +7,19 @@ if(isset($_POST['submit']))
 {
  echo $user_id=$_SESSION['user_id'];
 $FullName=$_POST['fullname'];
-$NickName=$_POST['nickname'];
+//$NickName=$_POST['nickname'];
 $Email=$_POST['email'];
 $Address=$_POST['address'];
 $PhoneNo=$_POST['phone'];
 $Website=$_POST['website'];
+
+if(!preg_match("/^[a-zA-Z'-]+$/",$FullName)) {
+  die("Please Enter character only");}
+
+  if(!filter_var($Email, FILTER_VALIDATE_EMAIL))
+  {
+      echo "Invalid Email Format";
+  }
 
 $sql="INSERT INTO address (userId,name,email,Address,phone,website) VALUES ('$user_id','$FullName','$Email','$Address','$PhoneNo','$Website') ";
 
@@ -105,7 +113,7 @@ $result=mysqli_query($con,$sql);
               <div class="cols-sm-10">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                  <input type="text" class="form-control" name="fullname" id="username"  placeholder="Enter your FullName"/>
+                  <input type="text" class="form-control" name="fullname" id="username" required="" placeholder="Enter your FullName"/>
                 </div>
               </div>
             </div>
@@ -119,7 +127,7 @@ $result=mysqli_query($con,$sql);
               <div class="cols-sm-10">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                  <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+                  <input type="email" class="form-control" name="email" id="email" required="" placeholder="...@gmail.com"/>
                 </div>
               </div>
             </div>
@@ -129,7 +137,7 @@ $result=mysqli_query($con,$sql);
               <div class="cols-sm-10">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                  <input type="text" class="form-control" name="address" id="Address"  placeholder="Enter your Address"/>
+                  <input type="text" class="form-control" name="address" id="Address" required="" placeholder="Enter your Address"/>
                 </div>
               </div>
             </div>
@@ -139,7 +147,7 @@ $result=mysqli_query($con,$sql);
               <div class="cols-sm-10">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                  <input type="text" class="form-control" name="phone" id="phone"  placeholder="Enter your phone no"/>
+                  <input type="number" class="form-control" name="phone" id="phone" required=""  placeholder="Enter your phone no"/>
                 </div>
               </div>
             </div>
@@ -150,7 +158,7 @@ $result=mysqli_query($con,$sql);
               <div class="cols-sm-10">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                  <input type="text" class="form-control" name="website" id="website"  placeholder="Enter your website no"/>
+                  <input type="text" class="form-control" name="website" id="website" required="" placeholder="Enter your website no"/>
                 </div>
               </div>
             </div>
@@ -176,11 +184,11 @@ $result=mysqli_query($con,$sql);
 
 
            <!---Footer header is started-->
-           <div class="copyright">
+          <div class="copyright">
            		<div class="container">
 
            			<div class="col-md-6">
-           			  <p> @ 201 -ALL Rights with MD SHOHEL RANA</p>
+           			  <p> @ 2018 -ALL Rights with MD SHOHEL RANA</p>
            			  </div>
 
 
@@ -199,7 +207,7 @@ $result=mysqli_query($con,$sql);
            			</div>
 
            		</div>
-           	</div>
+           	</div> 
 
 
     <!-- Bootstrap core JavaScript
